@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: #fff;
+    background: #121212;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -16,51 +16,42 @@ body {
 
 /* Header */
 header {
-    background: rgba(0, 0, 0, 0.8);
+    background: #1f1f1f;
     padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.2em;
 }
 
 nav a {
-    color: #fff;
+    color: #ffffff;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
-/* Hero Section */
-#hero {
-    padding: 100px 20px;
-    background: linear-gradient(to right, #141e30, #243b55);
-}
-
-.cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #ff9800;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
+nav a:hover {
+    color: #ff9800;
 }
 
 /* Sections */
 section {
-    padding: 60px 20px;
+    padding: 100px 20px;
+    border-bottom: 1px solid #333;
 }
 
 h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff9800;
 }
 
 ul {
@@ -69,13 +60,17 @@ ul {
 }
 
 li {
-    padding: 5px 0;
-    font-size: 1.1em;
+    padding: 10px 0;
+    font-size: 1.2em;
 }
 
-/* Footer */
+/* Contact Links */
 #contact a {
     color: #ff9800;
     text-decoration: none;
     font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
